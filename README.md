@@ -73,3 +73,5 @@ Just set `true` value to `convertHtmlToPng` variable. Your paths to files should
 
 Video example:
 
+https://github.com/Smoliarick/cypress-discord-webhook-integration-example/assets/104084410/640ff1e8-3ccc-434c-a038-5d57ac8832b0
+
