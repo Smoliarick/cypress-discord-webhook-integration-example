@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "cypress": "^12.7.0",
-    "cypress-discord-webhook-integration": "^1.0.0",
+    "cypress-discord-webhook-integration": "^1.1.0",
     "dotenv": "^16.0.3"
   },
   "devDependencies": {

@@ -38,9 +38,10 @@ module.exports = defineConfig({
         await sendToDiscordWebhook(
           webhookURL,     // required variable
           files,          // required variable
-          customMessage,  // uncomment it if you use custom value
-          customUsername, // uncomment it if you use custom value
-          customAvatar,   // uncomment it if you use custom value
+          customMessage,  // set to undefined if you don't use custom message, but use custom avatar, custom username or convertHtmlToPng functionality
+          customUsername, // set to undefined if you don't use custom username, but use custom avatar or convertHtmlToPng functionality
+          customAvatar,   // set to undefined if you don't use custom message, but use convertHtmlToPng functionality
+          true,           // if you want to convert HTML files to PNG set it as true, or remove it if you don't want to use this functionality
         );
         // --------------------required part------------------------------
       });
