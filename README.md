@@ -88,7 +88,11 @@ on('after:run', async (results) => {
 
 Video example:
 
-https://github.com/Smoliarick/cypress-discord-webhook-integration-example/assets/104084410/640ff1e8-3ccc-434c-a038-5d57ac8832b0
+
+
+https://github.com/Smoliarick/cypress-discord-webhook-integration-example/assets/104084410/9cdc3233-df71-47de-bf2c-c667e26b3d2b
+
+
 
 ### Send 1 message for each spec file with 1 PNG file 
 
@@ -123,6 +127,12 @@ on('after:spec', async (results) => {
 ```
 
 Video example:
+
+
+
+https://github.com/Smoliarick/cypress-discord-webhook-integration-example/assets/104084410/9fdf8301-211d-4ed8-bead-bfaa42d4f54e
+
+
 
 
 ### Send 1 message for each 10 spec files (1 message contains results for 10 or less specs)
@@ -162,4 +172,8 @@ on('after:run', async (results) => {
 ```
 
 Video example:
+
+
+
+https://github.com/Smoliarick/cypress-discord-webhook-integration-example/assets/104084410/c68d8799-7723-4354-91b2-2b289009754d
 
