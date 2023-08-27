@@ -1,6 +1,6 @@
 const { defineConfig } = require('cypress');
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
-// const { sendToDiscordWebhookForEachSpec, afterSpecFunction } = require('cypress-discord-webhook-integration'); // import lib
+const { sendToDiscordWebhookForEachSpec, afterSpecFunction } = require('cypress-discord-webhook-integration'); // import lib
 
 require('dotenv').config();
 
@@ -20,7 +20,7 @@ module.exports = defineConfig({
       });
 
       // If you want to see 1 message for 1 full run
-      on('after:run', async (results) => {
+      /* on('after:run', async (results) => {
         await afterRunHook();
 
         // --------------------required part------------------------------
@@ -46,7 +46,7 @@ module.exports = defineConfig({
           true,           // if you want to convert HTML files to PNG set it as true, or remove it if you don't want to use this functionality
         );
         // --------------------required part------------------------------
-      });
+      }); */
 
       // Send 1 message for each spec file with 1 PNG file 
       /* on('after:spec', async (results) => {
@@ -78,7 +78,7 @@ module.exports = defineConfig({
       }); */
 
       // If you want to see 1 message in Discord per 10 reports use next settings
-      /* on('after:spec', async (results) => {
+      on('after:spec', async (results) => {
         await afterRunHook();
 
         await afterSpecFunction('./cypress/reports/html/index.html');
@@ -104,7 +104,7 @@ module.exports = defineConfig({
           customAvatar,   // set to undefined if you don't use custom message
         );
         // --------------------required part------------------------------
-      }); */
+      });
 
       return config;
     },
